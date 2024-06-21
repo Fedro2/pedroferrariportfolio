@@ -40,7 +40,7 @@ body {
     content: "";
     display: block;
     height: 3px;
-    background-color: #f1c40f;
+    background-color: red;
     width: 0;
     transition: width 0.3s;
 }
