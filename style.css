@@ -314,6 +314,9 @@ body {
     margin-bottom: 5rem;
 }
 
+.contact a {
+    color:  #f1c40f;
+}
 footer {
     background-color: #f8f9fa;
     text-align: center;
