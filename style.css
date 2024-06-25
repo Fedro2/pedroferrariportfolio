@@ -3,17 +3,20 @@
     padding: 0;
 }
 
-body {
-    font-family: "Montserrat", sans-serif;
-    
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 25vh;
 }
 
-#navbar, #navbar ul{
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
+#navbar, #navbar ul {
     display: flex;
     justify-content: space-around;
     align-items: center;
     height: 17vh;
-  
 }
 
 #navbar p {
@@ -33,7 +36,6 @@ body {
 #navbar a {
     text-decoration: none;
     color: black;
-
 }
 
 #navbar a::before {
@@ -47,5 +49,392 @@ body {
 
 #navbar a:hover::before {
     width: 100%;
+}
 
+.content-home {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 83vh;
+}
+
+.content-home img {
+    width: 30%;
+}
+
+.text-home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 2rem;
+}
+
+.text-home h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.text-home p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    color: grey;
+}
+
+.text-home .subtitle {
+    color: #f1c40f;
+    opacity: 0.8;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.btn {
+    display: inline-block;
+    margin: 1rem 0;
+    padding: 1rem 1rem;
+    font-size: 1rem;
+    text-align: center;
+    color: #fff;
+    background-color: black;
+    border: 1px solid black;
+    border-radius: 2em;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background-color: white;
+    color: #f1c40f;
+    border: 1px solid black;
+}
+
+.buttons {
+    display: flex;
+    gap: 1rem;
+}
+
+.icons {
+    display: flex;
+    gap: 1rem;
+}
+
+.icons img {
+    width: 2rem;
+}
+
+.text-about {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    padding: 1rem;
+    max-width: 75vw;
+}
+
+.text-about img {
+    width: 10%;
+    opacity: 0.5;
+    margin-right: 3rem;
+}
+
+.line {
+    width: 50%;
+    height: 1px;
+    background-color: black;
+    margin: auto;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.skill {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+.bubble {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin: 0 2px;
+    background-color: #ccc;
+    border-radius: 50%;
+    flex: 1;
+}
+
+.skill p {
+    margin-right: 3rem;
+}
+
+.bubble.active {
+    background-color: #f1c40f;
+}
+
+.experience {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.experience h2 {
+    margin-bottom: 3rem;
+}
+
+.title-exp {
+    display: flex;
+    justify-content: center;
+}
+
+.info {
+    position: relative;
+}
+
+.experience img {
+    width: 2rem;
+    height: 2rem;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+}
+
+.legend {
+    position: absolute;
+    visibility: hidden;
+    background-color: white;
+    z-index: 1;
+    padding: 1rem;
+    border: 1px solid gray;
+    border-radius: 30px;
+}
+
+.info:hover .legend {
+    visibility: visible;
+}
+
+.skills {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.skill-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem;
+}
+
+.ps {
+    margin-bottom: 2rem;
+    text-align: center;
+    font-weight: lighter;
+}
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 2rem 0;
+}
+
+.projects h2 {
+    text-align: center;
+}
+
+.project {
+    width: 300px;
+    margin-bottom: 2rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    background-color: #fff;
+    transition: transform 0.3s ease;
+}
+
+.project:hover {
+    transform: scale(1.05);
+}
+
+.project img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.project h3 {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+}
+
+.project p {
+    font-size: 1rem;
+    margin: 0 1rem 1rem;
+}
+
+.project a {
+    display: inline-block;
+    margin: 1rem;
+    padding: 0.5rem 1rem;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 50px;
+    transition: background-color 0.3s ease;
+}
+
+.title-projekt {
+    text-align: center;
+}
+
+.github {
+    width: 1rem;
+    height: 1rem;
+}
+
+.project a .github {
+    width: 3rem;
+    height: 3rem;
+}
+
+.project a:hover {
+    background-color: #f1c40f;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+footer {
+    background-color: #f8f9fa;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+}
+
+footer p {
+    color: #212529;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    #navbar, #navbar ul {
+        flex-direction: column;
+        height: auto;
+        padding: 1rem;
+    }
+
+    #navbar ul {
+        gap: 1rem;
+    }
+
+    .content-home {
+        flex-direction: column;
+        height: auto;
+        text-align: center;
+    }
+
+    .content-home img {
+        width: 50%;
+        margin-bottom: 2rem;
+    }
+
+    .text-home {
+        margin-left: 0;
+    }
+
+    .text-home h1 {
+        font-size: 2rem;
+    }
+
+    .text-home .subtitle {
+        font-size: 1.2rem;
+    }
+
+    .text-about {
+        flex-direction: column;
+    }
+
+    .text-about img {
+        width: 20%;
+        margin-bottom: 1rem;
+    }
+
+    .skills {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .skill-section {
+        margin: 1rem 0;
+    }
+
+    .project {
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    #navbar, #navbar ul {
+        flex-direction: column;
+        height: auto;
+        padding: 1rem;
+    }
+
+    #navbar ul {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .content-home {
+        flex-direction: column;
+        height: auto;
+        text-align: center;
+    }
+
+    .content-home img {
+        width: 80%;
+        margin-bottom: 2rem;
+    }
+
+    .text-home h1 {
+        font-size: 1.5rem;
+    }
+
+    .text-home .subtitle {
+        font-size: 1rem;
+    }
+
+    .text-about {
+        flex-direction: column;
+        padding: 0 1rem;
+    }
+
+    .text-about img {
+        width: 30%;
+        margin-bottom: 1rem;
+    }
+
+    .skills {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .skill-section {
+        margin: 0.5rem 0;
+    }
+
+    .project {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
 }

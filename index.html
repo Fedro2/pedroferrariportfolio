@@ -1,23 +1,257 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <title>Pedro Ferrari</title>
 </head>
+
 <body>
     <nav id="navbar">
         <p>Pedro Ferrari</p>
         <ul>
             <li><a href="#home">Home</a></li>
             <li><a href="#experience">Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#projects">Projekte</a></li>
+            <li><a href="#contact">Kontakt</a></li>
         </ul>
-    
+    </nav>
+    <header id="home">
+        <div class="content-home">
+            <img src="pics/pedropic.png" alt="Pedro Ferrari">
+            <div class="text-home">
+                <p>Hallo, Ich bin</p>
+                <h1>Pedro Ferrari</h1>
+                <p class="subtitle">Schüler der IMS Basel</p>
+                <div class="buttons">
+                    <a href="lebenslauf.pdf" class="btn" download="lebenslauf.pdf">Download CV</a>
+                    <a href="modulnoten.pdf" class="btn">Modulnoten</a>
+                </div>
+                <div class="icons">
+                    <a href="https://github.com/Fedro2">
+                        <img src="pics/github.png" alt="Github">
+                    </a>
+                    <a href="https://www.linkedin.com/in/pedro-ferrari-7b1b3b1b3/">
+                        <img src="pics/linkedin.png" alt="Linkedin">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="line" data-aos="fade-up"></div>
+        <div class="text-about" data-aos="fade-up">
+            <img src="pics/left.png" alt="Quotation Mark">
+            <p>Als zielorientierter IMS Schüler, der einen Praktikum für das Jahr 2025 sucht, verbinde ich logisches Denken und Kreativität, um herausragende Webentwicklungslösungen zu schaffen. Mit meinem schnellen Lernvermögen und ständigen Streben nach Verbesserung werde ich Ihr Team mit innovativen Ideen und aussergewöhnlicher Leistung bereichern.</p>
+        </div>
+        <div class="line" data-aos="fade-up"></div>
+
+        <div class="experience" data-aos="fade-up">
+            <div id="experience" class="title-exp">
+                <h2>Experience</h2>
+                <div class="info">
+                    <img src="pics/info.png" alt="Info">
+                    <div class="legend">
+                        <span class="bubble active"></span><span class="bubble"></span><span class="bubble"></span><span class="bubble"></span><span class="bubble"></span><br>Grundkenntnisse, keine praktische Erfahrung<br><br>
+                        <span class="bubble active"></span><span class="bubble active"></span><span class="bubble"></span><span class="bubble"></span><span class="bubble"></span><br> Zusammenhänge, wenig praktische Erfahrung<br><br>
+                        <span class="bubble active"></span><span class="bubble active"></span><span class="bubble active"></span><span class="bubble"></span><span class="bubble"></span> <br>Theoretische Kenntnisse, praktische Erfahrungen<br><br>
+                        <span class="bubble active"></span><span class="bubble active"></span><span class="bubble active"></span><span class="bubble active"></span><span class="bubble"></span> <br>Gute Kenntnisse, viel Erfahrung<br><br>
+                        <span class="bubble active"></span><span class="bubble active"></span><span class="bubble active"></span><span class="bubble active"></span><span class="bubble active"></span> <br>Experte, viel praktische Erfahrung</div><br>
+                </div>
+            </div>
+            <div class="skills">
+                <div class="skill-section">
+                    <p class="ps">Programmiersprachen</p>
+                    <div class="skill" data-aos="fade-up">
+                        <p> JavaScript</p>
+                        <div class="bubbles">
+                            <span class="bubble active"></span>
+                            <span class="bubble active"></span>
+                            <span class="bubble"></span>
+                            <span class="bubble"></span>
+                            <span class="bubble"></span>
+                        </div>
+                    </div>
+                    <div class="skill" data-aos="fade-up">
+                        <p>Python</p>
+                        <div class="bubbles">
+                            <span class="bubble active"></span>
+                            <span class="bubble"></span>
+                            <span class="bubble"></span>
+                            <span class="bubble"></span>
+                            <span class="bubble"></span>
+                        </div>
+                    </div>
+                    <div class="skill" data-aos="fade-up">
+                        <p>Java</p>
+                        <div class="bubbles">
+                            <span class="bubble active"></span>
+                            <span class="bubble active"></span>
+                            <span class="bubble active"></span>
+                            <span class="bubble"></span>
+                            <span class="bubble"></span>
+                        </div>
+                    </div>
+                    <div class="skill" data-aos="fade-up">
+                        <p>PHP</p>
+                        <div class="bubbles">
+                            <span class="bubble active"></span>
+                            <span class="bubble active"></span>
+                            <span class="bubble active"></span>
+                            <span class="bubble"></span>
+                            <span class="bubble"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-section">
+                    <p class="ps">Datenbank</p>
+                    <div class="skill" data-aos="fade-up">
+                        <p>MySQL</p>
+                        <div class="bubbles">
+                            <span class="bubble active"></span>
+                            <span class="bubble active"></span>
+                            <span class="bubble active"></span>
+                            <span class="bubble active"></span>
+                            <span class="bubble"></span>
+                        </div>
+                    </div>
+                    <div class="skill" data-aos="fade-up">
+                        <p>NoSQL</p>
+                        <div class="bubbles">
+                            <span class="bubble active"></span>
+                            <span class="bubble"></span>
+                            <span class="bubble"></span>
+                            <span class="bubble"></span>
+                            <span class="bubble"></span>
+                        </div>
+                    </div>
+                    <div class="skill" data-aos="fade-up">
+                        <p>MongoDB</p>
+                        <div class="bubbles">
+                            <span class="bubble active"></span>
+                            <span class="bubble"></span>
+                            <span class="bubble"></span>
+                            <span class="bubble"></span>
+                            <span class="bubble"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-section">
+                    <p class="ps">Weitere</p>
+                    <div class="skill" data-aos="fade-up">
+                        <p>HTML</p>
+                        <div class="bubbles">
+                            <span class="bubble active"></span>
+                            <span class="bubble active"></span>
+                            <span class="bubble active"></span>
+                            <span class="bubble active"></span>
+                            <span class="bubble"></span>
+                        </div>
+                    </div>
+                    <div class="skill" data-aos="fade-up">
+                        <p>CSS</p>
+                        <div class="bubbles">
+                            <span class="bubble active"></span>
+                            <span class="bubble active"></span>
+                            <span class="bubble active"></span>
+                            <span class="bubble active"></span>
+                            <span class="bubble"></span>
+                        </div>
+                    </div>
+                    <div class="skill" data-aos="fade-up">
+                        <p>Office 365</p>
+                        <div class="bubbles">
+                            <span class="bubble active"></span>
+                            <span class="bubble active"></span>
+                            <span class="bubble active"></span>
+                            <span class="bubble active"></span>
+                            <span class="bubble active"></span>
+                        </div>
+                    </div>
+                    <div class="skill" data-aos="fade-up">
+                        <p>Git</p>
+                        <div class="bubbles">
+                            <span class="bubble active"></span>
+                            <span class="bubble active"></span>
+                            <span class="bubble"></span>
+                            <span class="bubble"></span>
+                            <span class="bubble"></span>
+                        </div>
+                    </div>
+                    <div class="skill" data-aos="fade-up">
+                        <p>BPMN</p>
+                        <div class="bubbles">
+                            <span class="bubble active"></span>
+                            <span class="bubble active"></span>
+                            <span class="bubble active"></span>
+                            <span class="bubble active"></span>
+                            <span class="bubble"></span>
+                        </div>
+                    </div>
+                    <div class="skill" data-aos="fade-up">
+                        <p>Docker</p>
+                        <div class="bubbles">
+                            <span class="bubble active"></span>
+                            <span class="bubble active"></span>
+                            <span class="bubble"></span>
+                            <span class="bubble"></span>
+                            <span class="bubble"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="line" data-aos="fade-up"></div>
+        <h2 id="projects" class="title-projekt">Projekte</h2>
+        <div class="projects">
+            <div class="project" data-aos="fade-up">
+                <img src="pics/boop.png" alt="Project 1">
+                <h3>BOOP</h3>
+                <p>Eine Website für ein Bücherantiquariat.
+                    <br>
+                    <br>HTML, CSS, PHP, MySQL
+                </p>
+                <a href="https://github.com/username/project1" target="_blank"><img src="pics/github.png" class="github"></a>
+            </div>
+            <div class="project" data-aos="fade-up">
+                <img src="pics/to-do.png" alt="Project 2">
+                <h3>TO-Do Liste</h3>
+                <p>Eine einfache To-Do-Liste App.
+                    <br>
+                    <br>HTML, CSS, JavaScript
+                </p>
+                <a href="https://github.com/username/project2" target="_blank"><img src="pics/github.png" class="github"></a>
+            </div>
+            <div class="project" data-aos="fade-up">
+                <img src="pics/future.png" alt="Project 2">
+                <h3>Coming Soon...</h3>
+                <p>Zukünftige Projekte werden hier erscheinen.
+                </p>
+                <a href="https://github.com/username/project2" target="_blank"><img src="pics/github.png" class="github"></a>
+            </div>
+
+
+        </div>
+        <div class="line" data-aos="fade-up"></div>
+
+        <div id="contact" class="contact" data-aos="fade-up">
+            <h2>Contact Me</h2><br>
+            <p>Email: <a href="mailto:pedro.ferrari@stud.edubs.ch">pedro.ferrari@stud.edubs.ch</a></p><br>
+            <p>Find me on socials:</p><br>
+            <div class="icons">
+                <a href="https://github.com/Fedro2" target="_blank"><img src="pics/github.png"></a>
+                <a href="https://www.linkedin.com/in/yourusername" target="_blank"><img src="pics/linkedin.png"></a>
+            </div>
+        </div>
+        <footer>
+            <p>© 2024 Pedro Ferrari</p>
+        </footer>
+        <script src="main.js"></script>
 </body>
+
 </html>
