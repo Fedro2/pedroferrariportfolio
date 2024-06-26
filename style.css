@@ -328,7 +328,21 @@ footer p {
     color: #212529;
 }
 
-/* Responsive Styles */
+#ferrari-container {
+    position: relative;
+}
+
+#ferrari-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 10rem
+    ;
+    height: auto;
+}
+
+
 @media (max-width: 768px) {
     #navbar, #navbar ul {
         flex-direction: column;
