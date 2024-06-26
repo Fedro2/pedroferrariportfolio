@@ -1,6 +1,6 @@
 AOS.init();
 
-document.getElementById('ferrari').addEventListener('mouseover', function() {
+document.getElementById('ferrari-container').addEventListener('mouseover', function() {
     document.getElementById('ferrari').style.visibility = 'hidden';
     document.getElementById('ferrari-img').style.display = 'block';
 });
