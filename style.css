@@ -51,6 +51,18 @@ body {
     width: 100%;
 }
 
+.flex-container {
+    position: relative;
+}
+
+.hover-image {
+    width: 5rem;
+    position: absolute;
+    top: 220px;
+    right: 240px;
+    opacity: 0.5;
+}
+
 .content-home {
     display: flex;
     flex-direction: row;
